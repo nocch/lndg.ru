@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ссылки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
 
-<body>
-   <div style="display: table; height: 100vh; width:100%; overflow: hidden;">
-        <div style="display: table-cell; vertical-align: middle; horisontal-align:middle; text-align:center">
-            <h1>In The Internet We Trust</h1>
-        </div>
-    </div>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 900px;
+        }
 
-</body>
-</html>
+        .link-block {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .link-block:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-block a {
+            text-decoration: none;
+            color: #2b8dff;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            margin: 10px 0;
+            transition: color 0.3
