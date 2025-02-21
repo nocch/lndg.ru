@@ -3,48 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ссылки</title>
+    <title>Лена Ночь</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            background-color: #f4f4f9;
+            height: 100vh;
         }
 
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
+            background-color: #fff;
             padding: 20px;
-            max-width: 900px;
-        }
-
-        .link-block {
-            background-color: #ffffff;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 250px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
         }
 
-        .link-block:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .link-block a {
-            text-decoration: none;
-            color: #2b8dff;
-            font-size: 18px;
-            font-weight: bold;
+        a {
             display: block;
+            text-align: center;
+            padding: 10px;
             margin: 10px 0;
-            transition: color 0.3
+            text-decoration: none;
+            color: #333;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+                width: 90%;
+            }
+
+            a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Визитка</h1>
+    <a href="https://t.me/it_bird_mem">айтиптичка</a>
+    <a href="https://t.me/memy_dlja_vseh">мемы</a>
+    <a href="https://t.me/ornito_nocch">бердвотчинг и орнитология</a>
+    <a href="https://nocchka.lndg.ru/">обо мне</a>
+    <a href="https://t.me/lenanocch">купить рукоделие, мерч или рекламу</a>
+    <a href="https://nocchka.lndg.ru/">резюме</a>
+</div>
+
+</body>
+</html>
